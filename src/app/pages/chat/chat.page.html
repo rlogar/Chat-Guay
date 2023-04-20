@@ -1,0 +1,25 @@
+
+
+<ion-header>
+
+  <ion-nav>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Chat
+    </ion-title>
+
+  </ion-nav>
+</ion-header> 
+<ion-content class="ion-padding">
+    <ion-button (click)="logOUT()">
+      LOGOUT
+    <ion-icon slot="end" name="person-circle"></ion-icon>
+    </ion-button>
+    <form [formGroup]="form" (ngSubmit)="enviarMensaje()">
+      <input id="name" type="text" formControlName="messageBody">
+      <ion-button [disabled]="!form.controls['messageBody'].valid" type="submit">Send</ion-button>
+    </form>
+</ion-content>
