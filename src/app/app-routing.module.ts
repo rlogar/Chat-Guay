@@ -16,7 +16,7 @@ const routes: Routes = [
     data: {authGuardPipe: redirectUnauthorizedToLogin},
   },
   {
-    path: '',
+    path: 'login',
     redirectTo: '',
     pathMatch: 'full'
   }

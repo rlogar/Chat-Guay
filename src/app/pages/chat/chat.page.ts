@@ -37,7 +37,7 @@ export class ChatPage implements OnInit {
   }
 
   enviarMensaje(){
-    console.log(' submiteando ')
+    this.messageService.LoadMensajeDB(this.form.controls['messageBody'].value);
   }
 
 }

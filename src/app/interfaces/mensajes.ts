@@ -1,5 +1,9 @@
 export interface Mensajes {
     usuario: String;
-    fecha: Date;
+    fecha: String;
     cuerpo: String;
+}
+
+export interface user {
+    name:'';
 }
